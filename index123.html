@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/material-icon/css/material-design-iconic-font.min.css')}}">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body  >
+
+    <div class="main" >
+        <div class="container" >
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="{{ url_for('static', filename='images/signup-img.jpg')}}" alt="">
+                </div>
+                <div class="signup-form">
+                    <form action = "http://localhost:5000/result" method="POST" class="register-form" id="register-form">
+                        <h2>Heart Disease Prediction</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Age :</label>
+                                <input type="text" name="Age" id="Age" required/>
+                            </div>
+                            
+                        </div>
+                       
+                       <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Gender :</label>
+                                <input type="text" name="Gender" id="Gender" required/>
+                            </div>
+                            
+                        </div>
+                        
+                       <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Chest Pain :</label>
+                                <input type="text" name="Chest Pain" id="Chest Pain" required/>
+                            </div>
+                            
+                        </div>
+                        
+						
+                       <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Resting BP :</label>
+                                <input type="text" name="Resting BP" id="Resting BP" required/>
+                            </div>
+                            
+                        </div>
+						
+						
+                       <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Cholestoral :</label>
+                                <input type="text" name="Cholestoral" id="Cholestoral" required/>
+                            </div>
+                            
+                        </div>
+						
+						
+                       <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Fasting Blood Sugar :</label>
+                                <input type="text" name="Fasting Blood Sugar" id="Fasting Blood Sugar" required/>
+                            </div>
+                            
+                        </div>
+                        
+						<div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Rest ECG :</label>
+                                <input type="text" name="Rest ECG" id="Rest ECG" required/>
+                            </div>
+                            
+                        </div>
+						
+						<div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Maximum Heart Rate Achieved:</label>
+                                <input type="text" name="Maximum Heart Rate Achieved" id="Maximum Heart Rate Achieved" required/>
+                            </div>
+                            
+                        </div>
+						
+						<div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Exercise induced angina :</label>
+                                <input type="text" name="Exercise induced angina" id="Exercise induced angina" required/>
+                            </div>
+                            
+                        </div>
+						
+						<div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Depression Induced by Exercise:</label>
+                                <input type="text" name="Depression Induced by Exercise" id="Depression Induced by Exercise" required/>
+                            </div>
+                            
+                        </div>
+						
+						<div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Slope of peak Exercise:</label>
+                                <input type="text" name="Slope of peak Exercise" id="Slope of peak Exercise" required/>
+                            </div>
+                            
+                        </div>
+                       	<div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Number of vessals:</label>
+                                <input type="text" name="Number of vessals" id="Number of vessals" required/>
+                            </div>
+                            
+                        </div>
+                       	<div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Defect:</label>
+                                <input type="text" name="Defect" id="Defect" required/>
+                            </div>
+                            
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit" value="Reset All" class="submit" name="reset" id="reset" />
+                            <input type="submit" value="Predict" class="submit" name="submit" id="submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
